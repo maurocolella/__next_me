@@ -1,4 +1,5 @@
 export const containerBase = `
-  ma-width: 100%;
+  margin: auto;
+  max-width: 100%;
   width: 960px;
 `

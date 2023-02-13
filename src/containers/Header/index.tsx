@@ -4,10 +4,11 @@ import { Nav } from '@/components/Nav'
 
 const Container = styled.header`
   background-color: #04324a;
+  box-sizing: border-box;
   color: #eee;
   display: flex;
   flex-direction: column;
-  height: 320px;
+  height: 360px;
   text-align: center;
 `
 
@@ -15,7 +16,6 @@ const Content = styled.div`
   ${containerBase}
   background-color: rgba(0, 12, 27, 0.45);
   flex: 1;
-  margin: auto;
   padding: 24px;
   z-index: 2;
 `
