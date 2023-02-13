@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { containerBase } from '@/styles/componentGlobals'
+import { Nav } from '@/components/Nav'
 
 const Container = styled.header`
   height: 320px;
@@ -16,8 +17,15 @@ export const Header = () => (
     <Content>
       <h1>Mauro Colella</h1>
     </Content>
-    <nav>
-      Nav
-    </nav>
+    <Nav entries={[
+      {
+        text: 'About',
+        link: '/about',
+      },
+      {
+        text: 'Resume',
+        link: '/resume',
+      }
+    ]} />
   </Container>
 )
