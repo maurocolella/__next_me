@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Header } from '@/containers/Header'
 import { Footer } from '@/containers/Footer'
+import { ParticlesContainer } from '@/components/Particles'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <ParticlesContainer />
       <main className={styles.main}>
         <article>Article</article>
         <aside>Optional aside</aside>
