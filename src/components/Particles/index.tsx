@@ -51,7 +51,7 @@ export function ParticlesContainer(props: unknown) {
             distance: 150,
             enable: true,
             opacity: 0.4,
-            width: 1,
+            width: 0.5,
           },
           collisions: {
             enable: true,
@@ -69,7 +69,7 @@ export function ParticlesContainer(props: unknown) {
           number: {
             density: {
               enable: true,
-              area: 360,
+              area: 240,
             },
             value: 48,
           },
@@ -80,7 +80,7 @@ export function ParticlesContainer(props: unknown) {
             type: 'circle',
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 0, max: 1 },
           },
         },
         detectRetina: true,
