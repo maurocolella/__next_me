@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import { Header } from '@/containers/Header'
+import { Footer } from '@/containers/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,18 +16,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        Header
-        <nav>
-          Nav
-        </nav>
-      </header>
+      <Header />
       <main className={styles.main}>
         <article>Article</article>
         <aside>Optional aside</aside>
       </main>
-      <footer>Footer</footer>
-      <section id="portal">Portal</section>
+      <Footer />
+      <section id="portal"></section>
     </>
   )
 }
