@@ -27,7 +27,10 @@ const Content = styled.div`
 export const Header = () => (
   <Container>
     <Content>
-      <h1><Logo /></h1>
+      <h1>
+        <Logo />
+        <div style={{ display: 'none' }}>Mauro Colella</div>
+      </h1>
     </Content>
     <Nav entries={[
       {

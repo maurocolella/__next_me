@@ -17,15 +17,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <ParticlesContainer />
-      <section className={styles.content}>
-        <main className={styles.main}>
+      <Header />
+      <main className={styles.content}>
+        <section className={styles.main}>
           <article>Article</article>
           <aside>Optional aside</aside>
-        </main>
+        </section>
         <Footer />
-      </section>
+      </main>
       <section id="portal"></section>
     </>
   )
