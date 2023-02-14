@@ -24,7 +24,7 @@ const Entry = styled.li`
 const NavLink = styled(Link)`
   align-items: center;
   display: flex;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   height: 100%;
   justify-content: center;
   text-transform: uppercase;
