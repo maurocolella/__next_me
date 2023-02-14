@@ -19,10 +19,10 @@ export function ParticlesContainer(props: unknown) {
     <Particles
       style={{
         bottom: 0,
-        height: '100%',
         left: 0,
+        objectFit: 'scale-down',
+        objectPosition: '50% 0',
         position: 'fixed',
-        width: '100%',
         zIndex: '1',
       }}
       id='tsparticles'
@@ -41,6 +41,7 @@ export function ParticlesContainer(props: unknown) {
             },
             resize: true,
           },
+          detectsOn: 'window',
         },
         particles: {
           color: {
