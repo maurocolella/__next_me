@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { containerBase } from '@/styles/componentGlobals'
 import { Nav } from '@/components/Nav'
+import Logo from '@/components/Logo/Logo'
 
 const Container = styled.header`
   background-color: #04324a;
@@ -15,15 +16,18 @@ const Container = styled.header`
 const Content = styled.div`
   ${containerBase}
   background-color: rgba(0, 12, 27, 0.45);
+  border-radius: 20px 20px 0 0;
   flex: 1;
+  margin-top: 10px;
   padding: 24px;
+  text-align: left;
   z-index: 2;
 `
 
 export const Header = () => (
   <Container>
     <Content>
-      <h1>Mauro Colella</h1>
+      <h1><Logo /></h1>
     </Content>
     <Nav entries={[
       {
