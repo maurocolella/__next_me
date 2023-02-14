@@ -19,11 +19,13 @@ export default function Home() {
       </Head>
       <Header />
       <ParticlesContainer />
-      <main className={styles.main}>
-        <article>Article</article>
-        <aside>Optional aside</aside>
-      </main>
-      <Footer />
+      <section className={styles.content}>
+        <main className={styles.main}>
+          <article>Article</article>
+          <aside>Optional aside</aside>
+        </main>
+        <Footer />
+      </section>
       <section id="portal"></section>
     </>
   )
