@@ -4,9 +4,13 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/main.module.scss'
 import { Header } from '@/containers/Header'
 import { Footer } from '@/containers/Footer'
-import { ParticlesContainer } from '@/components/Particles'
+import dynamic from 'next/dynamic'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const ParticlesContainer = dynamic(() => import('../components/Particles').then(module => module.ParticlesContainer), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
