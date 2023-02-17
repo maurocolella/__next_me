@@ -1,3 +1,6 @@
+// TODO: convert to functional/server component
+'use client';
+
 import React, { PureComponent } from 'react';
 import {
   gsap,
