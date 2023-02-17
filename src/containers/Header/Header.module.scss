@@ -1,6 +1,7 @@
 @import '../../styles/container-base.mixin';
 
 .header {
+  animation: bg-fade-in 1.5s ease-in;
   background-color: #04324a;
   box-sizing: border-box;
   color: #eee;
@@ -12,6 +13,7 @@
 
 .content {
   @include container-base;
+  animation: content-fade-in 1s ease-in-out;
   background-color: rgba(0, 12, 27, 0.45);
   border-radius: 20px 20px 0 0;
   flex: 1;
@@ -19,4 +21,24 @@
   padding: 24px;
   text-align: left;
   z-index: 2;
+}
+
+@keyframes bg-fade-in {
+  0% {
+    background-color: #FFFFFF;
+  }
+
+  100% {
+    background-color: #04324a;
+  }
+}
+
+@keyframes content-fade-in {
+  0% {
+    background-color: #FFFFFF;
+  }
+
+  100% {
+    background-color: rgba(0, 12, 27, 0.45);
+  }
 }

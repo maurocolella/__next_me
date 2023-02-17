@@ -16,9 +16,9 @@ class Logo extends PureComponent<{ width: number }> {
     const paths = document.getElementsByClassName(styles.logo__path);
     // Patch for IE
     gsap
-      .to(paths, 2.1, { strokeDashoffset: '0%', ease: Linear.easeOut });
+      .to(paths, 2, { strokeDashoffset: '0%', ease: Linear.easeOut });
     gsap
-      .to(paths, 0.8, { delay: 2, fill: 'rgba(255,255,255,1)', ease: Linear.easeIn });
+      .to(paths, 1, { delay: 2.4, fill: 'rgba(255,255,255,1)', ease: Linear.easeIn });
   }
 
   render() {
