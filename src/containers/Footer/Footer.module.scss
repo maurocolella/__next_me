@@ -1,4 +1,7 @@
+@import '../../styles/container-base.mixin';
+
 .footer {
+  @include container-base;
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
@@ -11,9 +14,7 @@
   border-top-width: 1px;
   border-top: 0;
   margin: 0 auto;
-  max-width: 100%;
   padding: 24px 24px 36px 24px;
   position: relative;
-  width: 960px;
   z-index: 2;
 }

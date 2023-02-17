@@ -7,8 +7,6 @@ import {
 
 import styles from './Logo.module.scss';
 
-const plugins = [CSSPlugin]; /* eslint-disable-line no-unused-vars */
-
 class Logo extends PureComponent<{ width: number }> {
   static defaultProps = {
     width: 400,

@@ -1,0 +1,22 @@
+@import '../../styles/container-base.mixin';
+
+.header {
+  background-color: #04324a;
+  box-sizing: border-box;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  text-align: center;
+}
+
+.content {
+  @include container-base;
+  background-color: rgba(0, 12, 27, 0.45);
+  border-radius: 20px 20px 0 0;
+  flex: 1;
+  margin-top: 20px;
+  padding: 24px;
+  text-align: left;
+  z-index: 2;
+}
