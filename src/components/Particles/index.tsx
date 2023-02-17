@@ -60,6 +60,7 @@ export const ParticlesContainer = (props: unknown) => {
             random: true,
             speed: 2,
             straight: false,
+            bounce: false,
           },
           number: {
             density: {
